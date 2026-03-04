@@ -459,32 +459,38 @@ backdrop-filter: blur(18px);
 
 
 /* AJUSTE RESPONSIVE CUENTA REGRESIVA */
+.count-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .count-box strong {
-  font-size: 2.7rem;
+  font-size: 2rem;
+  display: block;
+  line-height: 1.1;
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -1px;
-
-  color: #ffffff;
-
-  text-shadow:
-    0 4px 12px rgba(0,0,0,.7),
-    0 0 18px rgba(255,215,160,.6);
-}
-#countdown .count-box strong {
-  font-size: 2.7rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -1px !important;
-
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
-
-  text-shadow:
-    0 4px 12px rgba(0,0,0,.7),
-    0 0 18px rgba(255,215,160,.6) !important;
 }
 
+
+#countdown span {
+  font-size: .7rem;
+  white-space: nowrap;
+}
+
+
+@media (max-width: 420px) {
+  .count-box {
+    min-width: 60px;
+    padding: 6px 8px;
+  }
+
+.count-box strong {
+  font-size: 1.6rem;
+}  
+}
  /* ===== COUNTDOWN FIT REAL PHONE ===== */
 .phone-mode #countdown{
   max-width:100%;
@@ -830,20 +836,18 @@ border-bottom: 7px solid transparent;
     0 18px 45px rgba(0,0,0,.45);
 }
 
-/* Número FIX REAL */
+/* Número */
 .count-box strong {
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -1px;
 
-  color: #ffffff;
-  background: none;
-  -webkit-text-fill-color: #ffffff;
+  background: var(--gold-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  text-shadow:
-    0 4px 14px rgba(0,0,0,.7),
-    0 0 18px rgba(255,215,160,.6);
+  filter: drop-shadow(0 6px 14px rgba(255,215,160,.6));
 }
 
 /* Texto (DÍAS, HORAS…) */
