@@ -1900,7 +1900,7 @@ video{
   <p>19:00 hrs</p>
   <p>Salón Galerías</p>
   <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.30425231875!2d-97.8459963!3d22.266461800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f9bf24a6da3f%3A0xfc3dfc8335371482!2sParroquia%20Santa%20Cruz!5e0!3m2!1ses-419!2smx!4v1772576815933!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14980704.286144285!2d-102.62050004999999!3d23.554126900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f9bfad28b041%3A0x62caa06690bfd28!2sSal%C3%B3n%20Galerias!5e0!3m2!1ses-419!2smx!4v1772589075428!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;"></iframe>
   </div>
   <a class="btn" href="https://maps.app.goo.gl/fnNUAEjr5GxyC8Zq5"_blank">Cómo llegar</a>
 </section>
@@ -2545,12 +2545,9 @@ END:VCALENDAR`;
 }
 
 // Ejecutar al cargar la página
-actualizarOpciones();
- 
-   function sendConfirmation(attending) {
+function sendConfirmation(attending) {
 
   const name = document.getElementById("guestName").value.trim();
-
 
   if (!name) {
     alert("Por favor escribe tu nombre ✨");
@@ -2561,23 +2558,17 @@ actualizarOpciones();
 
   if (attending) {
 
-    if (!count) {
-      alert("Selecciona cuántas personas asistirán ✨");
-      return;
-    }
-
     message = `✨ Confirmación de asistencia ✨
 
-Con mucha alegría confirmo mi presencia en los XV años de Sofía Montes.
+Con mucha alegría confirmo mi presencia en los XV años de Danna Lucía.
 
 Nombre: ${name}
-${count}
 
 Será un honor acompañarte en este día tan especial 💖`;
 
   } else {
 
-    message = `✨ XV años Sofía Montes ✨
+    message = `✨ Danna Lucía✨
 
 Hola, mi nombre es ${name}.
 
@@ -2591,7 +2582,6 @@ pero te deseo un día maravilloso y lleno de felicidad 💐`;
 
   window.open(url, "_blank");
 }
-
    // ===== CENTRAR CUENTA REGRESIVA =====
 const verCuenta = document.getElementById("verCuenta");
 const countdownSection = document.getElementById("countdown-section");
