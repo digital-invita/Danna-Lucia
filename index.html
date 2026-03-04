@@ -471,6 +471,19 @@ backdrop-filter: blur(18px);
     0 4px 12px rgba(0,0,0,.7),
     0 0 18px rgba(255,215,160,.6);
 }
+#countdown .count-box strong {
+  font-size: 2.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+
+  text-shadow:
+    0 4px 12px rgba(0,0,0,.7),
+    0 0 18px rgba(255,215,160,.6) !important;
+}
 
  /* ===== COUNTDOWN FIT REAL PHONE ===== */
 .phone-mode #countdown{
@@ -817,18 +830,20 @@ border-bottom: 7px solid transparent;
     0 18px 45px rgba(0,0,0,.45);
 }
 
-/* Número */
+/* Número FIX REAL */
 .count-box strong {
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -1px;
 
-  background: var(--gold-btn);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
 
-  filter: drop-shadow(0 6px 14px rgba(255,215,160,.6));
+  text-shadow:
+    0 4px 14px rgba(0,0,0,.7),
+    0 0 18px rgba(255,215,160,.6);
 }
 
 /* Texto (DÍAS, HORAS…) */
